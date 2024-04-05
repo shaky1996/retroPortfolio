@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -154,10 +154,10 @@
     0 0 2px #facc15, 
     0 0 10px #facc15, 
     0 0 15px #facc15, 
-    0 0 20px #facc15, 
-    0 0 25px #facc15, 
-    0 0 80px #facc15, 
-    0 0 35px #facc15;  
+    0 0 10px #facc15, 
+    0 0 15px #facc15, 
+    0 0 10px #facc15, 
+    0 0 15px #facc15;  
 }
 
 .h1-topic-projects {
@@ -186,4 +186,18 @@
     inset 0 0 10px #db2777, 
     inset 0 0 20px #db2777, 
     0 0 25px #db2777;  
+}
+
+.skills-text {
+    font-family: "Codystar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow:
+  0 0 2px #facc15, 
+  0 0 1px #facc15, 
+  0 0 1px #facc15, 
+  0 0 1px #facc15, 
+  0 0 2px #facc15, 
+  0 0 10px #facc15, 
+  0 0 1px #facc15; 
 }

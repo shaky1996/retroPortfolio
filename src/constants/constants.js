@@ -3,11 +3,11 @@ import { bootstrap, typescript, html, css, javascript, reactjs, tailwind, nodejs
 
 const technologies = [
     {
-        title: "HTML 5",
+        title: "HTML",
       icon: html,
     },
     {
-        title: "CSS 3",
+        title: "CSS",
       icon: css,
     },
     {
@@ -19,15 +19,12 @@ const technologies = [
       icon: typescript,
     },
     {
-        title: "React",
+        title: "React / React Native",
       icon: reactjs,
     },
+
     {
-        title: "React Native",
-      icon: reactjs,
-    },
-    {
-        title: "Node(Express)",
+        title: "Node (Express)",
       icon: nodejs,
     },
     {
