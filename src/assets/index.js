@@ -8,7 +8,10 @@ import bootstrap from './tech/bootstrap.png';
 import typescript from './tech/typescript.png'
 import nodejs from './tech/nodejs.png'
 import postgresql from './tech/postgresql.png'
+import barcelona from './projects/barcelona.png'
+import portfolio from './projects/portfolio.png'
+import ufit from './projects/ufit.png'
 
 
 
-export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql };
+export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql, barcelona, portfolio, ufit };

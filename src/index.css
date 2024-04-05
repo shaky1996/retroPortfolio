@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +19,7 @@
 
 
 .hero {
-    @apply grid md:grid-cols-1 lg:grid-cols-3 gap-5 sm:px-16 px-6;
+    @apply grid md:grid-cols-1 xl:grid-cols-3 gap-5 sm:px-16 px-6;
 
 }
 
@@ -152,6 +153,35 @@
     font-family: "Montserrat", sans-serif;
     text-shadow:
     0 0 2px #facc15, 
+    0 0 1px #facc15, 
+    0 0 1px #facc15, 
+    0 0 1px #facc15, 
+    0 0 2px #facc15, 
+    0 0 10px #facc15, 
+    0 0 1px #facc15; 
+
+}
+
+.h1-topic-projects {
+    font-family: "Montserrat", sans-serif;
+    text-shadow:
+    0 0 2px #db2777, 
+    0 0 1px #db2777, 
+    0 0 1px #db2777, 
+    0 0 2px #db2777, 
+    0 0 10px #db2777, 
+    0 0 1px #db2777;  
+}
+
+
+.skills-box:hover {
+    box-shadow: 
+    inset 0 0 2px #facc15, 
+    inset 0 0 10px #facc15, 
+    inset 0 0 20px #facc15, 
+    0 0 25px #facc15;  
+    text-shadow:
+    0 0 2px #facc15, 
     0 0 10px #facc15, 
     0 0 15px #facc15, 
     0 0 10px #facc15, 
@@ -160,27 +190,7 @@
     0 0 15px #facc15;  
 }
 
-.h1-topic-projects {
-    font-family: "Montserrat", sans-serif;
-    text-shadow:
-    0 0 2px #db2777, 
-    0 0 10px #db2777, 
-    0 0 15px #db2777, 
-    0 0 20px #db2777, 
-    0 0 80px #db2777, 
-    0 0 35px #db2777;  
-}
-
-
-.skills-box {
-    box-shadow: 
-    inset 0 0 2px #facc15, 
-    inset 0 0 10px #facc15, 
-    inset 0 0 20px #facc15, 
-    0 0 25px #facc15;  
-}
-
-.projects-box {
+.projects-box:hover {
     box-shadow: 
     inset 0 0 2px #db2777, 
     inset 0 0 10px #db2777, 
@@ -190,7 +200,7 @@
 
 .skills-text {
     font-family: "Codystar", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-shadow:
   0 0 2px #facc15, 
@@ -200,4 +210,10 @@
   0 0 2px #facc15, 
   0 0 10px #facc15, 
   0 0 1px #facc15; 
+}
+
+.arrow {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
