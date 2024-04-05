@@ -5,11 +5,11 @@ import Column3 from './components/Column3';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
         <div className='hero'>
             <Column1 />
             <Column2 />
-            <Column3 />
+            
         </div>
     </div>
   );

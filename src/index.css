@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,14 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
     scroll-behavior: smooth;
     color-scheme: dark;
   }
 
 
 .hero {
-    @apply grid md:grid-cols-3  gap-5 relative z-0 max-w-[1440px] mx-auto justify-center align-middle;
+    @apply grid md:grid-cols-1 lg:grid-cols-3 gap-5 sm:px-16 px-6;
+
 }
 
 .neon-text {
@@ -26,6 +27,7 @@
     font-weight: 400;
     font-style: normal;
     text-shadow: 0 0 2px #fff, 0 0 10px #b91c1c, 0 0 15px #b91c1c, 0 0 20px #b91c1c, 0 0 25px #b91c1c, 0 0 30px #b91c1c, 0 0 35px #b91c1c;
+    
 }
 
 .neon-line {
@@ -34,21 +36,46 @@
 
 .neon-box {
     box-shadow: 
-    inset 0 0 2px #0ea5e9, 
-    inset 0 0 10px #0ea5e9, 
-    inset 0 0 100px #0ea5e9, 
-    inset 0 0 20px #0ea5e9, 
-    inset 0 0 25px #0ea5e9, 
-    inset 0 0 30px #0ea5e9, 
-    inset 0 0 35px #0ea5e9,
-    0 0 2px #0ea5e9, 
-    0 0 10px #0ea5e9, 
-    0 0 15px #0ea5e9, 
-    0 0 20px #0ea5e9, 
-    0 0 25px #0ea5e9, 
-    0 0 80px #0ea5e9, 
-    0 0 35px #0ea5e9;    
+        inset 0 0 2px #0ea5e9, 
+        inset 0 0 10px #0ea5e9, 
+        inset 0 0 100px #0ea5e9, 
+        inset 0 0 20px #0ea5e9, 
+        inset 0 0 25px #0ea5e9, 
+        inset 0 0 30px #0ea5e9, 
+        inset 0 0 35px #0ea5e9,
+        0 0 2px #0ea5e9, 
+        0 0 10px #0ea5e9, 
+        0 0 15px #0ea5e9, 
+        0 0 20px #0ea5e9, 
+        0 0 25px #0ea5e9, 
+        0 0 80px #0ea5e9, 
+        0 0 35px #0ea5e9; 
+    animation: neonLights 2s ease-in-out ;
 }
+
+@keyframes neonLights {
+    0%, 100% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 
+            inset 0 0 2px #0ea5e9, 
+            inset 0 0 10px #0ea5e9, 
+            inset 0 0 100px #0ea5e9, 
+            inset 0 0 20px #0ea5e9, 
+            inset 0 0 25px #0ea5e9, 
+            inset 0 0 30px #0ea5e9, 
+            inset 0 0 35px #0ea5e9,
+            0 0 2px #0ea5e9, 
+            0 0 10px #0ea5e9, 
+            0 0 15px #0ea5e9, 
+            0 0 20px #0ea5e9, 
+            0 0 25px #0ea5e9, 
+            0 0 80px #0ea5e9, 
+            0 0 35px #0ea5e9;
+    }
+}
+
 
 .neon-h2 {
     font-family: "Montserrat", sans-serif;
@@ -62,14 +89,31 @@
     0 0 35px #22c55e;  
 }
 
+.neon-p {
+    text-shadow:
+    0 0 2px #0ea5e9, 
+    0 0 1px #0ea5e9, 
+    0 0 1px #0ea5e9, 
+    0 0 1px #0ea5e9, 
+    0 0 2px #0ea5e9, 
+    0 0 10px #0ea5e9, 
+    0 0 1px #0ea5e9;  
+}
+
 .neon-linkedin {
     box-shadow: 
     inset 0 0 2px #0ea5e9, 
     inset 0 0 10px #0ea5e9, 
     inset 0 0 20px #0ea5e9, 
-
-
     0 0 25px #0ea5e9;  
+    text-shadow:
+    0 0 2px #0ea5e9, 
+    0 0 10px #0ea5e9, 
+    0 0 10px #0ea5e9, 
+    0 0 1px #0ea5e9, 
+    0 0 20px #0ea5e9, 
+    0 0 10px #0ea5e9, 
+    0 0 1px #0ea5e9;  
 }
 
 .neon-github {
@@ -78,13 +122,68 @@
     inset 0 0 10px #22c55e, 
     inset 0 0 20px #22c55e, 
     0 0 25px #22c55e;  
+    text-shadow:
+    0 0 2px #22c55e, 
+    0 0 10px #22c55e, 
+    0 0 10px #22c55e, 
+    0 0 1px #22c55e, 
+    0 0 20px #22c55e, 
+    0 0 10px #22c55e, 
+    0 0 1px #22c55e;  
 }
 
 .neon-resume {
     box-shadow: 
-    inset 0 0 2px #d946ef, 
-    inset 0 0 10px #d946ef, 
-    inset 0 0 20px #d946ef, 
+    inset 0 0 2px #db2777, 
+    inset 0 0 10px #db2777, 
+    inset 0 0 20px #db2777, 
+    0 0 25px #db2777;  
+    text-shadow:
+    0 0 2px #db2777, 
+    0 0 10px #db2777, 
+    0 0 10px #db2777, 
+    0 0 1px #db2777, 
+    0 0 20px #db2777, 
+    0 0 10px #db2777, 
+    0 0 1px #db2777;  
+}
 
-    0 0 25px #d946ef;  
+.h1-topic-skills {
+    font-family: "Montserrat", sans-serif;
+    text-shadow:
+    0 0 2px #facc15, 
+    0 0 10px #facc15, 
+    0 0 15px #facc15, 
+    0 0 20px #facc15, 
+    0 0 25px #facc15, 
+    0 0 80px #facc15, 
+    0 0 35px #facc15;  
+}
+
+.h1-topic-projects {
+    font-family: "Montserrat", sans-serif;
+    text-shadow:
+    0 0 2px #db2777, 
+    0 0 10px #db2777, 
+    0 0 15px #db2777, 
+    0 0 20px #db2777, 
+    0 0 80px #db2777, 
+    0 0 35px #db2777;  
+}
+
+
+.skills-box {
+    box-shadow: 
+    inset 0 0 2px #facc15, 
+    inset 0 0 10px #facc15, 
+    inset 0 0 20px #facc15, 
+    0 0 25px #facc15;  
+}
+
+.projects-box {
+    box-shadow: 
+    inset 0 0 2px #db2777, 
+    inset 0 0 10px #db2777, 
+    inset 0 0 20px #db2777, 
+    0 0 25px #db2777;  
 }
