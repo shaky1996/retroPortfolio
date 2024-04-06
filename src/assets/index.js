@@ -12,7 +12,8 @@ import barcelona from './projects/barcelona.png'
 import portfolio from './projects/portfolio.png'
 import ufit from './projects/ufit.png'
 import tvnoise from './projects/tvnoise.png'
+import column from './projects/column.svg'
 
 
 
-export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql, barcelona, portfolio, ufit, tvnoise };
+export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql, barcelona, portfolio, ufit, tvnoise,column };
