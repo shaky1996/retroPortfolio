@@ -11,7 +11,8 @@ import postgresql from './tech/postgresql.png'
 import barcelona from './projects/barcelona.png'
 import portfolio from './projects/portfolio.png'
 import ufit from './projects/ufit.png'
+import tvnoise from './projects/tvnoise.png'
 
 
 
-export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql, barcelona, portfolio, ufit };
+export { css, git, html, javascript, reactjs, tailwind, bootstrap, typescript, nodejs, postgresql, barcelona, portfolio, ufit, tvnoise };
